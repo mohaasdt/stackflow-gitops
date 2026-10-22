@@ -2,7 +2,7 @@
 
 ## Why there is application code here
 
-The original technical specification calls for **three repositories**: application source, GitOps desired state and platform. At this stage, only `chaima-menouar/stackflow-gitops` exists. To make meaningful progress without waiting for other repositories, this branch also includes `services/demo-app` and `services/platform` as **temporary, logically isolated subdirectories**. The monorepo is a development compromise, **not** a claim that the required three-repository isolation has been achieved.
+The original technical specification calls for **three repositories**: application source, GitOps desired state and platform. At this stage, only `mohaasdt/stackflow-gitops` exists. To make meaningful progress without waiting for other repositories, this branch also includes `services/demo-app` and `services/platform` as **temporary, logically isolated subdirectories**. The monorepo is a development compromise, **not** a claim that the required three-repository isolation has been achieved.
 
 ## What is implemented
 
@@ -17,7 +17,7 @@ The original technical specification calls for **three repositories**: applicati
 
 1. Clone the repository and copy `.env.example` to `.env`. Set a strong random `DEV_ADMIN_API_TOKEN`, and `GRAFANA_ADMIN_PASSWORD`. Do not commit `.env`.
 2. Run `docker compose up --build`.
-3. Open the web portal at `http://localhost:5173`; enter the local API token. Register `chaima-menouar/stackflow-gitops`.
+3. Open the web portal at `http://localhost:5173`; enter the local API token. Register `mohaasdt/stackflow-gitops`.
 4. Demo workload: `http://localhost:8000/health/ready`. Backend health: `http://localhost:8001/health`.
 5. Optional local monitoring: `docker compose --profile monitoring up --build`. Prometheus is on localhost:9090; Grafana on localhost:3000.
 

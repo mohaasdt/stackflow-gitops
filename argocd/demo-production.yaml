@@ -6,7 +6,7 @@ metadata:
 spec:
   project: stackflow
   source:
-    repoURL: https://github.com/chaima-menouar/stackflow-gitops.git
+    repoURL: https://github.com/mohaasdt/stackflow-gitops.git
     targetRevision: main
     path: apps/demo/overlays/production
   destination:

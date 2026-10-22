@@ -21,7 +21,7 @@ from sqlalchemy.orm import DeclarativeBase, Mapped, Session, mapped_column, sess
 from starlette.responses import Response
 
 DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./stackflow.db")
-ALLOWED_REPO = os.getenv("ALLOWED_GITHUB_REPO", "chaima-menouar/stackflow-gitops").lower()
+ALLOWED_REPO = os.getenv("ALLOWED_GITHUB_REPO", "mohaasdt/stackflow-gitops").lower()
 LOCAL_TOKEN = os.getenv("DEV_ADMIN_API_TOKEN", "")
 GITHUB_TOKEN = os.getenv("GITHUB_API_TOKEN", "")
 engine = create_engine(

@@ -41,7 +41,7 @@ cp .env.example .env
 docker compose up --build
 ```
 
-Open **http://localhost:5173**. Enter `DEV_ADMIN_API_TOKEN`, choose **Connect**, then register `chaima-menouar/stackflow-gitops`. Demo API is `http://localhost:8000/health/ready`.
+Open **http://localhost:5173**. Enter `DEV_ADMIN_API_TOKEN`, choose **Connect**, then register `mohaasdt/stackflow-gitops`. Demo API is `http://localhost:8000/health/ready`.
 
 To enable an actual staging workflow dispatch from the web portal, configure **`GITHUB_API_TOKEN` in the backend environment** with minimal Actions permissions for this exact repository. Use the current 40-character `main` SHA. Never paste GitHub tokens into browser inputs.
 

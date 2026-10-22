@@ -7,5 +7,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY app ./app
 USER app
 EXPOSE 8000
-LABEL org.opencontainers.image.source="https://github.com/chaima-menouar/stackflow-gitops"
+LABEL org.opencontainers.image.source="https://github.com/mohaasdt/stackflow-gitops"
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]

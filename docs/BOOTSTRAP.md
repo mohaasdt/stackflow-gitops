@@ -4,9 +4,9 @@
 
 ## 1. Separate repositories
 
-- `chaima-menouar/stackflow-demo-app`: FastAPI demo source, tests, Dockerfile, CI / GHCR image publication.
-- `chaima-menouar/stackflow-gitops`: this repository; deployment desired state, not source code.
-- `chaima-menouar/stackflow-platform`: developer portal, API, and infrastructure bootstrap.
+- `mohaasdt/stackflow-demo-app`: FastAPI demo source, tests, Dockerfile, CI / GHCR image publication.
+- `mohaasdt/stackflow-gitops`: this repository; deployment desired state, not source code.
+- `mohaasdt/stackflow-platform`: developer portal, API, and infrastructure bootstrap.
 
 Until the demo-app image exists in GHCR, this repository uses an **all-zero digest placeholder**. It is intentionally not a deployable image. **Do not install the Argo CD Applications yet.**
 

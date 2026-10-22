@@ -32,7 +32,7 @@ function Icon({name, size = 18}: {name: IconName; size?: number}) {
   return <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{paths[name]}</svg>;
 }
 
-const workflowUrl = "https://github.com/chaima-menouar/stackflow-gitops/actions";
+const workflowUrl = "https://github.com/mohaasdt/stackflow-gitops/actions";
 
 function WaveBackdrop() {
   return <svg className="wave-backdrop" viewBox="0 0 1150 450" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
@@ -51,7 +51,7 @@ function App() {
   const [projects, setProjects] = useState<Project[]>([]);
   const [deployments, setDeployments] = useState<Deployment[]>([]);
   const [health, setHealth] = useState<Health | null>(null);
-  const [repo, setRepo] = useState("chaima-menouar/stackflow-gitops");
+  const [repo, setRepo] = useState("mohaasdt/stackflow-gitops");
   const [sha, setSha] = useState("");
   const [projectId, setProjectId] = useState("");
   const [notice, setNotice] = useState("Connect with your local development token to load project and deployment records.");

@@ -6,7 +6,7 @@ metadata:
 spec:
   description: StackFlow demo app; trusted repository and demo namespaces only
   sourceRepos:
-    - https://github.com/chaima-menouar/stackflow-gitops.git
+    - https://github.com/mohaasdt/stackflow-gitops.git
   destinations:
     - server: https://kubernetes.default.svc
       namespace: demo-staging

@@ -48,4 +48,4 @@ jobs:
           git push --set-upstream origin "$branch"
           gh pr create --base main --head "$branch" \
             --title "chore(staging): propose image release" \
-            --body "Proposed image: ghcr.io/chaima-menouar/stackflow-demo-app@$IMAGE_DIGEST. Validate CI and review before merging. This PR does not deploy on its own; staging Argo CD reconciles only an approved merge."
+            --body "Proposed image: ghcr.io/mohaasdt/stackflow-demo-app@$IMAGE_DIGEST. Validate CI and review before merging. This PR does not deploy on its own; staging Argo CD reconciles only an approved merge."

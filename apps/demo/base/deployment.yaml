@@ -29,7 +29,7 @@ spec:
       containers:
         - name: api
           # Non-deployable bootstrap digest; replace via reviewed GitOps PR.
-          image: ghcr.io/chaima-menouar/stackflow-demo-app@sha256:0000000000000000000000000000000000000000000000000000000000000000
+          image: ghcr.io/mohaasdt/stackflow-demo-app@sha256:0000000000000000000000000000000000000000000000000000000000000000
           imagePullPolicy: IfNotPresent
           ports:
             - name: http

@@ -10,7 +10,7 @@ from pathlib import Path
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
-IMAGE = "ghcr.io/chaima-menouar/stackflow-demo-app"
+IMAGE = "ghcr.io/mohaasdt/stackflow-demo-app"
 DIGEST_PATTERN = re.compile(r"sha256:[0-9a-f]{64}\Z")
 
 

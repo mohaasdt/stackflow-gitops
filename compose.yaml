@@ -18,7 +18,7 @@ services:
     environment:
       DATABASE_URL: postgresql+psycopg://stackflow:local-only-not-for-production@db:5432/stackflow
       DEV_ADMIN_API_TOKEN: ${DEV_ADMIN_API_TOKEN:?Set DEV_ADMIN_API_TOKEN in .env}
-      ALLOWED_GITHUB_REPO: chaima-menouar/stackflow-gitops
+      ALLOWED_GITHUB_REPO: mohaasdt/stackflow-gitops
       GITHUB_API_TOKEN: ${GITHUB_API_TOKEN:-}
     ports:
       - "127.0.0.1:8001:8001"

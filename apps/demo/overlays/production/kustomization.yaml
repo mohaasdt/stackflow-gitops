@@ -8,6 +8,6 @@ replicas:
   - name: demo-api
     count: 2
 images:
-  - name: ghcr.io/chaima-menouar/stackflow-demo-app
-    newName: ghcr.io/chaima-menouar/stackflow-demo-app
+  - name: ghcr.io/mohaasdt/stackflow-demo-app
+    newName: ghcr.io/mohaasdt/stackflow-demo-app
     digest: sha256:0000000000000000000000000000000000000000000000000000000000000000

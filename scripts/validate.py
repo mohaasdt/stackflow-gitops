@@ -10,8 +10,8 @@ from pathlib import Path
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
-IMAGE = "ghcr.io/chaima-menouar/stackflow-demo-app"
-REPO = "https://github.com/chaima-menouar/stackflow-gitops.git"
+IMAGE = "ghcr.io/mohaasdt/stackflow-demo-app"
+REPO = "https://github.com/mohaasdt/stackflow-gitops.git"
 ZERO = "sha256:" + "0" * 64
 DIGEST = re.compile(r"sha256:[0-9a-f]{64}\Z")
 

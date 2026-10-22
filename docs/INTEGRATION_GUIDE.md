@@ -1,6 +1,6 @@
 # Connecting all three StackFlow repositories
 
-**Live repository:** `chaima-menouar/stackflow-gitops`. The other two code packages are currently prepared offline and need separate GitHub repositories: `stackflow-demo-app` and `stackflow-platform`.
+**Live repository:** `mohaasdt/stackflow-gitops`. The other two code packages are currently prepared offline and need separate GitHub repositories: `stackflow-demo-app` and `stackflow-platform`.
 
 ## Who owns what?
 
@@ -14,7 +14,7 @@
 
 1. Create the two missing GitHub repositories and push their corresponding starter folders.
 2. In `stackflow-gitops`, configure real GitHub branch protection/review requirements. The GitOps repository was public at the time of this guide; GitHub package visibility is independent.
-3. Run `stackflow-demo-app` CI on `main`; inspect tests and security scan. On a passing run, it publishes `ghcr.io/chaima-menouar/stackflow-demo-app@sha256:<digest>`.
+3. Run `stackflow-demo-app` CI on `main`; inspect tests and security scan. On a passing run, it publishes `ghcr.io/mohaasdt/stackflow-demo-app@sha256:<digest>`.
 4. Optionally create a GitHub App / fine-grained token with **contents and pull request permissions limited to `stackflow-gitops`**. Set its value as the demo app repository secret `GITOPS_PR_TOKEN`. This is an automation credential, NOT a Kubernetes admin credential.
 5. After publishing, CI opens a staging digest-update PR (or run the GitOps repository's `Propose staging release` workflow with the digest).
 6. Review and merge the staging PR. Do not install Argo CD Applications before a real digest exists.
